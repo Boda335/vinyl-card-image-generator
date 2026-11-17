@@ -1,4 +1,4 @@
 node_modules
-test/output.png
-test/thumb*.png
+test/out
+test/thumbs
 .vercel

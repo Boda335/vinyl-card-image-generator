@@ -1,10 +1,17 @@
 {
-  "name": "queue-card-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "vinyl-card-generator",
+  "version": "2.0.0",
+  "description": "Vinyl 'Now Playing' card image API (Playing / Paused / Live) for a Discord music bot",
+  "main": "lib/renderCard.js",
   "scripts": {
-    "test": "node test/local-test.js"
+    "dev": "node server.js",
+    "thumbs": "node test/make-thumbs.js",
+    "test": "node test/local-test.js",
+    "test:url": "node test/url-test.js",
+    "test:features": "node test/features-test.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [],
   "author": "",

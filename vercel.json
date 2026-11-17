@@ -1,5 +1,10 @@
 {
   "rewrites": [
+    { "source": "/vinyl", "destination": "/api/vinyl" },
     { "source": "/queue", "destination": "/api/queue" }
-  ]
+  ],
+  "functions": {
+    "api/vinyl.js": { "includeFiles": "{assets,fonts}/**", "maxDuration": 10 },
+    "api/queue.js": { "includeFiles": "{assets,fonts}/**", "maxDuration": 10 }
+  }
 }
